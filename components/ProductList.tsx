@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import Loader from "./Loading";
 
@@ -27,7 +27,6 @@ const ProductList = () => {
         const products = await data.json();
         setProducts(products.products);
         setLoading(false);
-
       } catch (error) {
         console.error("Error fetching data:", error);
         setLoading(false);
@@ -39,7 +38,7 @@ const ProductList = () => {
 
   return (
     <div>
-     
+      <h1 className="text-4xl font-bold">Product List</h1>
       {loading ? (
         <Loader />
       ) : (
@@ -55,15 +54,6 @@ const ProductList = () => {
 
 export default ProductList;
 
-
-
-
-
-
-
-
-
-
 // const [isButtonClicked, setIsButtonClicked] = useState(false);
 
 //   const [product, setProduct] = useState(true)
@@ -73,19 +63,19 @@ export default ProductList;
 //   const handleProduct = () => {
 //     setProduct(true);
 //     setTodo(false);
-//     setUser(false); 
+//     setUser(false);
 //   };
 
 //   const handleTodo = () => {
 //     setProduct(false);
 //     setTodo(true);
-//     setUser(false); 
+//     setUser(false);
 //   };
 
 //   const handleUser= () => {
 //     setProduct(false);
 //     setTodo(false);
-//     setUser(true); 
+//     setUser(true);
 //   };
 
 //   const handleButtonClick = () => {

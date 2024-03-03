@@ -9,7 +9,6 @@ interface Todo {
     userId: number;
   }
   
-
 const Todo = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [loading, setLoading] = useState(true);
@@ -33,7 +32,7 @@ const Todo = () => {
   
   return (
     <div>
-     
+     <h1 className="text-4xl font-bold"> Some Todos</h1> 
       {loading ? (
         <Loader />
       ) : (
